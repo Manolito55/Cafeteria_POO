@@ -1,6 +1,6 @@
-import java.util.Scanner;
+package Logica;
 
-import javax.swing.JOptionPane;
+import java.util.Scanner;
 
 public class Cafe {
 	
@@ -50,7 +50,7 @@ public void setSocio(boolean socio) {
 
 @Override
 public String toString() {
-	return "Tipo de Cafe = " + tipo + ", Cantidad Comprada = " + cantidad + ", Socio = " + Socio + "]";
+	return "Tipo de Cafe = " + tipo + ", Cantidad Comprada = " + cantidad + ", Socio = " + Socio;
 }
 
 public void PrecioCafe() {
@@ -94,7 +94,7 @@ public void TipoCafe() {
 	Scanner entrada = new Scanner(System.in);
 
 	System.out.println("----------------------------------------------------");
-	System.out.println("Seleccione el Tipo de Cafe que desea");
+	System.out.println("Seleccione el Tipo de Cafe");
 	System.out.println("1. Latte");
 	System.out.println("2. Flat White");
 	System.out.println("3. Lagrima");
@@ -136,15 +136,12 @@ public void CantidadCafe() {
 	setCantidad(cant);
 }
 
-	
-
-
 public void Socio() {
 	
 	Scanner entrada = new Scanner(System.in);
 
 	System.out.println("----------------------------------------------------");
-	System.out.println("Es usted Socio?");
+	System.out.println("Es Socio?");
 	System.out.println("1. Si");
 	System.out.println("2. No");
 	System.out.println("----------------------------------------------------");
